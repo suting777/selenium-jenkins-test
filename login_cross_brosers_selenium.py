@@ -6,7 +6,7 @@ browers = ["Chrome","Firefox"]
 for brower in browers:
     if brower == "Chrome":
       driver = webdriver.Chrome()
-    elif browser == "Firefox":
+    elif brower == "Firefox":
       driver = webdriver.Firefox()
 
     driver.get("https://www.saucedemo.com/")
