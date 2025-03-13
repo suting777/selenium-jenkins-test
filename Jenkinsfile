@@ -16,7 +16,7 @@ pipeline {
 
         stage('Run Selenium Test') {
             steps {
-                bat 'python login_selenium.py'
+                bat 'python login_cross_brosers_selenium.py'
             }
         }
     }
