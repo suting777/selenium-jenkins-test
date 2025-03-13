@@ -10,7 +10,7 @@ for brower in browers:
       driver = webdriver.Firefox()
 
     driver.get("https://www.saucedemo.com/")
-    print(f"running test on {browser}")
+    print(f"running test on {brower}")
 
     username = driver.find_element(By.ID, "user-name")
     password = driver.find_element(By.ID, "password")
