@@ -3,10 +3,10 @@ from selenium.webdriver.common.by import By
 
 browers = ["Chrome","Firefox"]
 
-for brower in browers
+for brower in browers:
     if brower == "Chorme":
       driver = webdriver.Chrome()
-    else browser == "Firefox"
+    else browser == "Firefox":
       driver = webdriver.Firefox()
 
 driver.get("https://www.saucedemo.com/")
