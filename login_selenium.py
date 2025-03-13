@@ -1,7 +1,14 @@
 from selenium import webdriver
+driver = webdriver.Chrome(options=chrome_options)
+
 from selenium.webdriver.common.by import By
 
-driver = webdriver.Chrome()
+# Remove headless mode so the browser open
+#driver = webdriver.Chrome()
+from selenium.webdriver.chrome.options import Options
+chrome_options = Options()
+driver = webdriver.Chrome(options=chrome_options)
+
 driver.get("https://www.saucedemo.com/")
 
 username = driver.find_element(By.ID, "user-name")
