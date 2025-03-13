@@ -1,5 +1,4 @@
 from selenium import webdriver
-driver = webdriver.Chrome(options=chrome_options)
 
 from selenium.webdriver.common.by import By
 
