@@ -1,12 +1,12 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/suting777/selenium-jenkins-test.git'
-            }
-        }
+   stage('Clone Repository') {
+    steps {
+        git credentialsId: '71901886-3673-4bb3-a4a0-dcdacad0d7ea', branch: 'main', url: 'https://github.com/suting777/selenium-jenkins-test.git'
+    }
+}
+
 
         stage('Setup Environment') {
             steps {
